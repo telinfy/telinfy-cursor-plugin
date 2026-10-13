@@ -1,0 +1,18 @@
+{
+  "name": "telinfy",
+  "owner": {
+    "name": "GreenAds Global",
+    "email": "support@telinfy.com"
+  },
+  "metadata": {
+    "description": "Telinfy messaging for Cursor: consent-gated SMS and WhatsApp campaigns, phonebooks and delivery reports",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "telinfy",
+      "source": "./plugins/telinfy",
+      "description": "Send consent-gated SMS and WhatsApp campaigns, manage phonebooks, and pull delivery reports from your Telinfy account."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "telinfy",
+  "displayName": "Telinfy",
+  "version": "1.0.0",
+  "description": "Send consent-gated SMS and WhatsApp campaigns, manage phonebooks, and pull delivery reports from your Telinfy account.",
+  "author": {
+    "name": "GreenAds Global",
+    "email": "support@telinfy.com"
+  },
+  "homepage": "https://mcp.telinfy.com/docs",
+  "license": "MIT",
+  "keywords": ["sms", "whatsapp", "rcs", "messaging", "campaigns", "marketing", "dlt", "telinfy", "mcp"],
+  "logo": "assets/logo.png"
+}

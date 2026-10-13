@@ -1,0 +1,15 @@
+---
+description: How to use the Telinfy MCP tools to send SMS and WhatsApp campaigns, manage phonebooks and read delivery reports
+alwaysApply: false
+---
+
+telinfy-messaging:
+
+- Always confirm the recipients, message text and sender with the user before calling send_sms, schedule_sms or send_whatsapp_campaign. These sends are real messages and cannot be recalled.
+- Sends only reach saved, active contacts in the user's Telinfy phonebook. If a number is refused, ask the user to confirm the person has opted in before adding them with create_phonebook. Never add numbers just to get a send through.
+- A contact deactivated in any group is opted out. Only reactivate one with toggle_contact_status if the user confirms the person has given consent again.
+- SMS to Indian numbers must match a DLT-registered template exactly, with an approved sender ID and template_id. Ask the user for the exact approved template text instead of writing or paraphrasing it.
+- For WhatsApp templates with an image, video or document header, ask the user for the media before sending; without it Meta rejects every message.
+- "Accepted" is not "delivered". Check getMessageReport or fetch_whatsapp_smart_report to confirm delivery before telling the user messages arrived.
+- schedule_sms times are IST in the format YYYY-MM-DD HH:mm:ss and must be in the future.
+- Report tools can return large results; ask for a narrower date range or a specific campaign when the user only needs part of it.
